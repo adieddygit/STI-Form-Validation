@@ -4,6 +4,7 @@
 // + = matches one or more occurance of the preceeding character
 // [^xyz] = matches anything not enclosed in the bracket
 // \s = matches a single white space.
+
 try{
   function validatesti(){
     let date = document.forms.sti.date.value;
@@ -149,6 +150,11 @@ try{
     }
   }
 
+  catch(err){
+    window.alert(err.message);
+}
+
+
   function validatename(){
     let namepattern = /^[A-Za-z\s]*$/;
     let name = document.forms.sti.name.value;
@@ -164,7 +170,3 @@ try{
       }
     }
   }
-
-catch(err){
-    window.alert(err.message);
-}
